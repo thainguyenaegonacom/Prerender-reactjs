@@ -223,8 +223,7 @@ function Item(props: any) {
                   <div className="btn-group">
                     {item?.uuid ? (
                       <a
-                        target="_blank"
-                        rel="noreferrer"
+                        target="__blank"
                         className="btn-receipt"
                         href={`/receipt/${item?.uuid}` || '/'}
                       >

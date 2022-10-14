@@ -74,7 +74,7 @@ function renderBlockWithProducts(item: any) {
             {item?.link?.link_type === 'external' ? (
               <a
                 target={item?.link?.new_window ? '_blank' : ''}
-                rel="noreferrer"
+                rel={'noopener noreferrer'}
                 href={getLink(item)}
                 title={item?.link?.title}
               >
@@ -85,7 +85,7 @@ function renderBlockWithProducts(item: any) {
             ) : (
               <Link
                 target={item?.link?.new_window ? '_blank' : ''}
-                rel="noreferrer"
+                rel={'noopener noreferrer'}
                 // to={
                 //   item?.link && item?.link?.relative_url
                 //     ? `${item?.link?.relative_url}`
@@ -113,7 +113,7 @@ function renderBlockWithoutProducts(item: any) {
     return (
       <a
         target={item?.link?.new_window ? '_blank' : ''}
-        rel="noreferrer"
+        rel={'noopener noreferrer'}
         href={getLink(item)}
         title={item?.link?.title}
       >
@@ -126,7 +126,7 @@ function renderBlockWithoutProducts(item: any) {
     return (
       <Link
         target={item?.link?.new_window ? '_blank' : ''}
-        rel="noreferrer"
+        rel={'noopener noreferrer'}
         to={getLink(item)}
         title={item?.link?.title}
       >

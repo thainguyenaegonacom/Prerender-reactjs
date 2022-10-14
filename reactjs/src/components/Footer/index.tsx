@@ -53,28 +53,19 @@ function Footer({ data = [] }: { data: any }) {
             <ul className="social-group">
               <li>
                 <a
-                  target="_blank"
-                  rel="noreferrer"
+                  target="__blank"
                   href="https://bd.linkedin.com/company/sundora?trk=public_profile_topcard-current-company"
                 >
                   <img className="linkedin" src={icLinkedIn} alt="ic-linkedin" />
                 </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.facebook.com/sundorabeauty"
-                >
+                <a target="__blank" href="https://www.facebook.com/sundorabeauty">
                   <img src={icFaceBook} width={14} height={22.39} alt="ic-facebook" />
                 </a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.instagram.com/sundorabeauty"
-                >
+                <a target="__blank" href="https://www.instagram.com/sundorabeauty">
                   <img src={icInsta} width={21} height={24} alt="ic-instagram" />
                 </a>
               </li>

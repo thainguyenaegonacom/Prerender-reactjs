@@ -1,13 +1,23 @@
-const prerender = require("prerender");
-var server = prerender({
-    chromeLocation: "C:/Program Files/Google/Chrome/Application/chrome.exe",
+const express = require("express");
+const app = express();
+const port = 3001;
+
+const path = require('path')
+
+
+app.use(
+    require("prerender-node").set(
+        "prerenderServiceUrl",
+        "http://localhost:3000"
+    )
+);
+
+app.use('/', express.static(path.join(__dirname, 'reactjs/build')))
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "reactjs/build", "index.html"));
 });
 
-server.use(require("prerender-memory-cache"));
-// server.use(prerender.sendPrerenderHeader());
-// server.use(prerender.browserForceRestart());
-// server.use(prerender.blockResources());
-// // server.use(prerender.removeScriptTags());
-// server.use(prerender.httpHeaders());
-
-server.start();
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`);
+});

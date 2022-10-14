@@ -1,0 +1,2 @@
+(this.webpackJsonpfrontend=this.webpackJsonpfrontend||[]).push([[22],{244:function(t,n,e){"use strict";e.r(n);e(1);var s=e(21),c=e.p+"static/media/404.e84b024f.png",o=e(0);n.default=function(){return Object(o.jsxs)("section",{className:"blk-notfound",children:[Object(o.jsx)("img",{src:c,loading:"lazy",alt:""}),Object(o.jsx)(s.b,{to:"/",children:"Go to home"})]})}}}]);
+//# sourceMappingURL=22.ef4e11ee.chunk.js.map

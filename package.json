@@ -1,0 +1,19 @@
+{
+  "name": "pre3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-proxy": "^1.18.1",
+    "http-proxy-middleware": "^2.0.6",
+    "prerender": "^5.20.0",
+    "prerender-memory-cache": "^1.0.2",
+    "prerender-node": "^3.5.0"
+  }
+}
